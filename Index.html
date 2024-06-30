@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de pesquisa</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <h1 id="title">Pesquisa de satisfação</h1>
+    <p id="description">Segue a nossa pesquisa de satisfação referente ao livro <em>O Guia Definitivo do Mochileiro das Galáxias</em></p>
+
+    <form id="survey-form">
+
+        <label id="name-label">Digite seu nome: <input id="name" type="text" placeholder="Insira seu nome aqui!" required></label>
+        <label id="email-label">Digite seu e-mail: <input id="email" type="email" placeholder="Insira seu email aqui!" required></label>
+        <label id="number-label">Coloque aqui a sua idade: <input id="number" type="number" min="0" max="10" placeholder="Insira aqui sua idade!"></label>
+
+        <select id="dropdown">
+            <option value="">Selecione o livro da coletânea</option>
+            <option value="1">O Guia do Mochileiro das Galáxias</option>
+            <option value="2">O Restaurante no Fim do Universo</option>
+            <option value="3">A Vida, o Universo e Tudo mais</option>
+            <option value="4">Até Mais, e Obrigado pelos Peixes!</option>
+            <option value="5">Praticamente Inofensiva</option>
+        </select>
+
+        <input type="radio" name="opiniao" value="gostou">
+        <label for="opiniao">Gostou </label>
+        <input type="radio" name="opiniao" value="naoGostou">
+        <label for="opiniao">Não gostou </label>
+
+        <input type="checkbox" name="frase1" id="frase1" value="primeiraFrase">
+        <label for="frase1">Não entre em pânico!</label>
+        <input type="checkbox" name="frase2" id="frase2" value="segundaFrase">
+        <label for="frase2">Pegue a sua toalha!</label>
+        <input type="checkbox" name="frase3" id="frase3" value="TerceiraFrase">
+        <label for="frase2">O número 42!</label>
+
+        <textarea name="" id=""></textarea>
+
+        <button id="submit">Enviar!</button>
+    </form>
+</body>
+</html>
